@@ -32,7 +32,6 @@ resource "local_file" "private_key" {
 }
 # launch a ec2 instnace
 
-
 resource "aws_instance" "web_server_from_TF" {
   ami           = "ami-0fff1b9a61dec8a5f"
   instance_type = "t2.micro"
@@ -41,3 +40,4 @@ resource "aws_instance" "web_server_from_TF" {
     Name = "test ins"
     }
 }
+
