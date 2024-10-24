@@ -1,6 +1,6 @@
 node {
     stage('Build') {
-        sh 'git clone https://github.com/ps4444/gct_tf.git /tmp'
+        sh 'git clone https://github.com/ps4444/gct_tf.git /ps4444'
     }
         stage('Build') {
         sh 'terraform -fmt'  
