@@ -1,12 +1,9 @@
 node {
     stage('Build') {
-        sh 'make'
+        sh 'terraform -fmt'
     }
     stage('Test') {
-        sh 'make check'
+        sh 'terraform -plan'
         junit 'reports/**/*.xml'
-    }
-    stage('Deploy') {
-        sh 'make publish'
     }
 }
