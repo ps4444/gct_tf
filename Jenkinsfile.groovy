@@ -3,7 +3,7 @@ node {
     sh 'sudo rm -rf ps4444'  
     }
     stage('Build') {
-    sh 'cd /tmp'  
+    sh 'cd /ps4444'  
     }
         stage('Build') {
         sh 'sudo git clone https://github.com/ps4444/gct_tf.git ./'
